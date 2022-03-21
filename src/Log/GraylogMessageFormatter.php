@@ -12,7 +12,7 @@
 namespace Hillus\SinLaravelGraylog\Log;
 
 use Monolog\Logger;
-use App\Log\Message;
+use Hillus\SinLaravelGraylog\Log\Message;
 use Monolog\Formatter\NormalizerFormatter;
 use Monolog\Utils;
 
