@@ -1,6 +1,6 @@
 <?php
 
-namespace Hillus\SinLaravelGraylog\Services;
+namespace Hillus\SinLaravelGraylog\Service;
 
 use Gelf\Publisher;
 use Gelf\Transport\UdpTransport;

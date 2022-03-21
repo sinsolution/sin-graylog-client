@@ -30,7 +30,7 @@ class ServiceProvider extends IlluminateServiceProvider
         // $this->app->alias('singraylog', SinApi::class);
 
         $this->app->singleton('singraylog', function ($app) {
-            return new \Hillus\SinLaravelGraylog\Services\GraylogSetup($app['config'], $app['files']);
+            return new \Hillus\SinLaravelGraylog\Service\GraylogSetup($app['config'], $app['files']);
         });
 
     }
