@@ -1,0 +1,34 @@
+{
+    "name": "hillushilbert/sin-laravel-graylog",
+    "license": "MIT",
+    "keywords": ["laravel", "monolog", "gelf","graylog"],
+    "authors": [
+        {
+            "name": "Hillus Hilbert",
+            "email": "hillus.hilbert@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2|^7.3|^7.4|^8",
+        "illuminate/support": "^5.5|^6|^7|^8",
+        "graylog2/gelf-php": "^1.7"  
+    },
+    "autoload": {
+        "psr-4": {
+            "Hillus\\SinLaravelGraylog\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.8-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Hillus\\SinLaravelGraylog\\ServiceProvider"
+            ],
+            "aliases": {
+                "SinLaravelGraylog": "Hillus\\SinLaravelGraylog\\Facade"
+            }
+        }
+    }   
+}
