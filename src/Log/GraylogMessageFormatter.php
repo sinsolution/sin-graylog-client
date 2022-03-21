@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace App\Log;
+namespace Hillus\SinLaravelGraylog\Log;
 
 use Monolog\Logger;
 use App\Log\Message;
