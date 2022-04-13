@@ -16,7 +16,6 @@ class MySQLCustomLogger{
     
     public function __invoke(array $config)
     {
-        dump(__METHOD__);
         $logger = new Logger("MySQLLoggingHandler");
         return $logger->pushHandler(new MySQLLoggingHandler());
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Logging;
+namespace Hillus\SinLaravelGraylog\Logging;
 
 // use Illuminate\Log\Logger;
 use Illuminate\Support\Facades\DB;
@@ -16,9 +16,7 @@ class MySQLLoggingHandler extends AbstractProcessingHandler
  * https://github.com/markhilton/monolog-mysql/blob/master/src/Logger/Monolog/Handler/MysqlHandler.php
  */
     public function __construct($level = Logger::DEBUG, $bubble = true) 
-    { 
-        dump(__METHOD__);
-       
+    {        
         $this->table = 'logs';
         parent::__construct($level, $bubble);
     }    
