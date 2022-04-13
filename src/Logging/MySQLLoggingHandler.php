@@ -41,6 +41,6 @@ class MySQLLoggingHandler extends AbstractProcessingHandler
        $config = config('graylog.mysql');
        Config::set("database.connections.mysql_log", $config);
 
-       DB::connection()->connection('mysql_log')->table($this->table)->insert($data);     
+       DB::connection('mysql_log')->table($this->table)->insert($data);     
     }
 }
