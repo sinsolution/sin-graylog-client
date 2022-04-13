@@ -25,6 +25,7 @@ class MySQLLoggingHandler extends AbstractProcessingHandler
     {
        // dd($record);          
        $data = [
+           'projeto_id'    => config('graylog.projeto_id'),
            'message'       => $record['message'],
            'context'       => json_encode($record['context']),
            'level'         => $record['level'],

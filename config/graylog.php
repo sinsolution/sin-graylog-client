@@ -15,4 +15,5 @@ return [
         'prefix'    => '',
         'strict'    => false,
     ],
+    'projeto_id' => env('SINLOG_PROJETO_ID',1),
 ];
